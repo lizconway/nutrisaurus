@@ -62,3 +62,36 @@ html,body
 	max-height:100%;
 	max-width:100%;
 }
+
+.footer-links {
+  font-weight: 600;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 80px;
+  min-height:80px;
+}
+.margin-top-lg {
+  margin-top: 70px;
+  min-height: 70px;
+}
+.margin-bottom-md {
+  margin-bottom: 50px;
+  min-height:50px;
+}
+.margin-top-md {
+  margin-top: 50px;
+  min-height: 50px;
+}
+.margin-bottom-sm {
+  margin-bottom: 20px;
+  min-height:20px;
+}
+.margin-top-sm {
+  margin-top: 20px;
+  min-height: 20px;
+}
+
+ul li {
+    margin-left: -20px;
+}
