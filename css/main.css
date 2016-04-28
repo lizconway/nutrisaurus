@@ -6,6 +6,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    background-color: #F5F5F5;
 }
 
 .home-header {
@@ -36,9 +37,28 @@ html,body
 
 .Green-Button {
   border: 2px solid #FFFFFF;
-  background-color: #4AC75F;
+  background-color: #379F6E;
 }
 
 .Green-Button:hover {
-  border: 2px solid #BADA55;
+  border: 2px solid #379F6E;
+}
+
+.green-background {
+	background-color: #E2FFE2;
+}
+.light-background {
+	background-color: #FFFFFF;
+}
+
+.footer-bar {
+	max-width:100%;
+	min-height:1px;
+}
+
+.wave-divider {
+	background-image: url(../img/Wave-divider.png);
+    background-repeat: no-repeat;
+	max-height:100%;
+	max-width:100%;
 }
