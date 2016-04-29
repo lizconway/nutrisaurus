@@ -6,6 +6,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    background-color: #F5F5F5;
 }
 
 .home-header {
@@ -36,9 +37,61 @@ html,body
 
 .Green-Button {
   border: 2px solid #FFFFFF;
-  background-color: #4AC75F;
+  background-color: #379F6E;
 }
 
 .Green-Button:hover {
-  border: 2px solid #BADA55;
+  border: 2px solid #379F6E;
+}
+
+.green-background {
+	background-color: #E2FFE2;
+}
+.light-background {
+	background-color: #FFFFFF;
+}
+
+.footer-bar {
+	max-width:100%;
+	min-height:1px;
+}
+
+.wave-divider {
+	background-image: url(../img/Wave-divider.png);
+    background-repeat: no-repeat;
+	max-height:100%;
+	max-width:100%;
+}
+
+.footer-links {
+  font-weight: 600;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 80px;
+  min-height:80px;
+}
+.margin-top-lg {
+  margin-top: 70px;
+  min-height: 70px;
+}
+.margin-bottom-md {
+  margin-bottom: 50px;
+  min-height:50px;
+}
+.margin-top-md {
+  margin-top: 50px;
+  min-height: 50px;
+}
+.margin-bottom-sm {
+  margin-bottom: 20px;
+  min-height:20px;
+}
+.margin-top-sm {
+  margin-top: 20px;
+  min-height: 20px;
+}
+
+ul li {
+    margin-left: -20px;
 }
