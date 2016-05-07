@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Task Cases for Add Recipe</title>
+<link rel="shortcut icon" href="..img/nutrisaurus-logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css"> -->
+
+	<script src="../jQuery/jquery-1.12.3.min.js"></script>
+	
+	<script src="../js/bootstrap.js"></script>
+	
+	<!-- <script src="js/jqm-desktop.js"></script>
+	<script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script> -->
+	
+    <!-- Custom CSS -->
+	<link href="../css/use-case.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="nutriNav" class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12 text-center">LEGEND</div>
+					<br>
+					<div class="col-md-12 text-center actor">Actor</div>
+					<br>
+					<div class="col-md-12 text-center system">
+						NutriSaurus System
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="col-md-6">
+				<h1 id="ucTitle">Add Recipe Task Cases</h1>
+			</div>
+
+			<div class="col-md-2 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="uc-diagram.html" class="btn btn-success">UC Diagram</a>
+					</div>
+					<div class="col-md-12">
+						<a role="button" href="AddRecipe-task-flow.html" class="btn btn-info">Task Flow Diagram</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    </div> <!-- /container-fluid -->
+    </nav>
+
+	<div>
+		<ol class="shiftMe">
+			<li>Basic Flow</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Add Recipe</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display retailer list screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select retailer</td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter recipe summary</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose Add recipe details</td>
+						<td class="system">Display recipe page</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter ingredients</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter cooking details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose to save recipe</td>
+						<td class="system">Save new recipe</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+				</table>
+			<li>Alternative Flow – Copy Shopping List</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Copy an existing Shopping List</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display retailer list screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select retailer</td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+					<tr>
+						<td class="actor af af1">Select copy recipe</td>
+						<td class="system af af1">Display recipe list screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af1">Choose recipe to copy</td>
+						<td class="system af af1">Copy recipe</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe page</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter ingredients</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter cooking details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose to save recipe</td>
+						<td class="system">Save new recipe</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+				</table>
+			<li>Alternative Flow – Enter Calories per serving</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Enter Calories per serving</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display retailer list screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select retailer</td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter recipe summary</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor af af2">Select Enter Calories per Serving</td>
+						<td class="system af af2">Display Calories/Serving screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af2">Enter Calories per serving</td>
+						<td class="system af af2"></td>
+					</tr>
+					<tr>
+						<td class="actor af af2">Select save calories per serving</td>
+						<td class="system af af2">Save calories per serving</td>
+					</tr>
+					<tr>
+						<td class="actor">Choose Add recipe details</td>
+						<td class="system">Display recipe page</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter ingredients</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter cooking details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose to save recipe</td>
+						<td class="system">Save new recipe</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+				</table>
+			<li>Alternative Flow – View Nutrition</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : View nutritional data for an ingredient</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display retailer list screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select retailer</td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter recipe summary</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose Add recipe details</td>
+						<td class="system">Display recipe page</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter ingredients</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor af af3">Select View Nutrition option</td>
+						<td class="system af af3">Display Nutrition information screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af3">Select to Close View Nutrition screen</td>
+						<td class="system af af3">Display Add Recipe screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter cooking details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose to save recipe</td>
+						<td class="system">Save new recipe</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+				</table>
+			<li>Alternative Flow – Find Alternative Ingredient</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Find an alternative to the current ingredient</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display retailer list screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select retailer</td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter recipe summary</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose Add recipe details</td>
+						<td class="system">Display recipe page</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter ingredients</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor af af4">Select Find Alternatives option</td>
+						<td class="system af af4">Display Alternative Ingredient screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af4">Select an alternative ingredient</td>
+						<td class="system af af4"></td>
+					</tr>
+					<tr>
+						<td class="actor af af4">Choose to save alternative ingredient</td>
+						<td class="system af af4">Save alternative ingredient</td>
+					</tr>
+					<tr>
+						<td class="actor af af4"></td>
+						<td class="system af af4">Display Add Recipe screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter cooking details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose to save recipe</td>
+						<td class="system">Save new recipe</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+				</table>
+			<li>Alternative Flow - Rate Recipe</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Give a Recipe a Rating</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display retailer list screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select retailer</td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter recipe summary</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose Add recipe details</td>
+						<td class="system">Display recipe page</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter ingredients</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter cooking details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose to save recipe</td>
+						<td class="system">Save new recipe</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+					<tr>
+						<td class="actor af af5">Choose to rate recipe</td>
+						<td class="system af af5">Display rate recipe screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af5">Rate Recipe</td>
+						<td class="system af af5"></td>
+					</tr>
+					<tr>
+						<td class="actor af af5">Choose to save rating</td>
+						<td class="system af af5">Save rating</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display recipe summary</td>
+					</tr>
+				</table>
+		</ol>
+	</div>
+
+</body>
+</html>

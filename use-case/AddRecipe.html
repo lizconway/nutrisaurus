@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Recipe Use Case</title>
+<link rel="shortcut icon" href="../img/nutrisaurus-logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css"> -->
+
+	<script src="../jQuery/jquery-1.12.3.min.js"></script>
+	
+	<script src="../js/bootstrap.js"></script>
+	
+	<!-- <script src="js/jqm-desktop.js"></script>
+	<script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script> -->
+	
+    <!-- Custom CSS -->
+	<link href="../css/use-case.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <nav id="nutriNav" class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-12 text-center">LEGEND</div>
+					<br>
+					<div class="col-md-12 text-center actor">Actor</div>
+					<br>
+					<div class="col-md-12 text-center system">
+						NutriSaurus
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="col-md-7">
+				<h1 id="ucTitle">Add Recipe  (Overview)</h1>
+			</div>
+
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-14">
+						<button type="button" class="btn btn-default uc-mid-btn" id="detailOverview"><strong>Click here to view Detail</strong></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="AddRecipe-TaskCases.html" class="btn btn-warning">Task Cases</a>
+					</div>
+					<div class="col-md-12">
+						<a role="button" href="AddRecipe-task-flow.html" class="btn btn-info">Task Flow Diagram</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="uc-diagram.html" class="btn btn-success">UC Diagram</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    </div> <!-- /container-fluid -->
+    </nav>
+
+	<div class="uc-nav-pad">
+	<p class="uc-description">This use case details how the Chef will use the system to create a recipe.</p>
+	<ol>
+		<li>Basic Flow
+		<ol>
+			<li class="actor">Select Option</li>
+			<p class="actor hideMe">The use case begins when the Chef selects the option for create recipe.</p>
+			<li class="system">Display retailer list screen</li>
+			<p class="system hideMe">The system displays the retailer list screen.</p>
+			<li class="actor">Select retailer</li>
+			<p class="actor hideMe">The Chef chooses a retailer.</p>
+			<li class="system">Display recipe summary screen</li>
+			<p class="system hideMe">The system will display a create recipe screen.</p>
+			<li class="actor">Enter recipe summary</li>
+			<p class="actor hideMe">The Chef enters the recipe summary [Servings, Main Ingredient, Cuisine type, Cost limit]</p>
+			<li class="actor">Add recipe details</li>
+			<p class="actor hideMe">The Chef chooses to add the recipe details.</p>
+			<li class="system">Display recipe screen</li>
+			<p class="system hideMe">The system displays the recipe page.</p>
+			<p class="loop">[This use case loops from step 1.8 (Enter ingredient) to step 1.8 (Enter ingredient) until the Chef chooses to enter cooking details]</p>
+			<li class="actor">Enter ingredient</li>
+			<p class="actor hideMe">The Chef enters an ingredient, quantity and unit of measure.</p>
+			<li class="actor">Enter cooking details</li>
+			<p class="actor hideMe">The Chef enters the cooking details [instructions, cooking time, extra tips & tricks].</p>
+			<li class="actor">Select Save recipe option</li>
+			<p class="actor hideMe">The Chef chooses to save the Recipe.</p>
+			<li class="system">Save recipe</li>
+			<p class="system hideMe">The system saves the recipe.</p>
+			<li class="system">Display recipe summary</li>
+			<p class="system hideMe">The system displays the recipe summary page and the use case ends.</p>
+		</ol>
+		</li>
+		
+		<li>Alternative Flows
+		<ol>
+			<li>Copy Shopping List</li>
+			<p class="hideMe">If at step 1.5 (Enter recipe summary) the Shopper chooses to copy an existing shopping list, the Shopper selects a shopping list from the list of shopping lists.  The system loads a new version of the chosen shopping list and the use case continues at step 1.7 (Display recipe screen).</p>
+			<li>Enter calories per serving</li>
+			<p class="hideMe">If at step 1.5 (Enter recipe summary) the Chef chooses to add ‘calories per serving’ to the recipe.  The system displays the appropriate screen.  The Chef enters calories per serving for the recipe and selects the save calories per serving option.  The use case continues at step 1.5 (Enter recipe summary).</p>
+			<li>View nutrition</li>
+			<p class="hideMe">If at step 1.8 (Enter ingredient) the Chef chooses to view nutritional data for the ingredient..  The system displays the appropriate screen showing the nutritional data.  The Chef closes the screen and the use case continues at step 1.8 (Enter ingredient).</p>
+			<li>Find alternative ingredient</li>
+			<p class="hideMe">If at step 1.8 (Enter ingredient) the Chef chooses to find alternative ingredient.  The system displays the appropriate screen.  The Chef chooses an alternative ingredient and chooses to save the alternative ingredient.  The system saves the alternative ingredient and the use case continues at step 1.8 (Enter ingredient).</p>
+			<li>Rate recipe</li>
+			<p class="hideMe">If at step 1.12 (Display recipe summary) the Chef chooses to rate the recipe.  The system displays the appropriate screen.  The Chef enters a rating for the recipe and chooses to save the rating.  The system saves the rating.  The use case continues at step 12 (Display recipe summary).</p>
+			<li>Cancel</li>
+			<p class="hideMe">If at any time the Chef chooses to cancel the activity, the system displays a warning message asking the Chef to either continue with the cancel action or quit the cancel action.  If the Chef chooses to continue with the cancel action, the use case ends.  If the Chef chooses to quit the cancel action, the system closes the message and the use case continues from its current point.</p>
+			<li>Database unavailable</li>
+			<p class="hideMe">If at step 1.11 (Save recipe) the system establishes that the database is unavailable, the system displays a warning message.  The Chef acknowledges the warning message and the use case ends.</p>
+		</ol>
+		</li>
+		<li>Key Scenario</li>
+	<p class="hideMe">Gillian Moore just wants an app that will help her cook healthy without the need to be a Michelin Star chef or have a pantry with exotic ingredients.  She just wants a simple recipe that will not have to break the bank.</p>
+	<li>Preconditions</li>
+	<p class="hideMe">The Chef must have successfully logged in, and still be logged in.</p>
+	<li>Post-conditions</li>
+	<p class="hideMe">Either the recipe has been created and all data has been saved, or no data has been modified.</p>
+	</ol>
+
+	</div>
+	<script src="../js/uc.js">
+	</script>
+</body>
+</html>

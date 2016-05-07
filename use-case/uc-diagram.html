@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/nutrisaurus-logo.png">
+	<title>Use Case Diagram</title>
+
+    <script type="text/javascript" src="../jQuery/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/uc.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+	<div>
+		<table>
+			<tr><td colspan="3">Functionality Overview</td></tr>
+			<tr>
+				<td class="active">
+					<a href="#">Use Case Diagram</a></td>
+				<td class="inactive">
+					<a href="structure.html">Logical Structure Map</a></td>
+				<td class="inactive">
+					<a href="std.html">State Transition Diagram</a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="heading">
+		<h2>Use Case Diagram</h2>
+		<ul>
+			<li>Hover over an Actor or Use Case to see a description</li>
+			<li>Click on a Use Case to view the Use Case Specification</li>
+		</ul>
+	</div>
+	<div>
+		<img src="../img/use-case-diagram.png" alt="Use Case Diagram for NutriSaurus App" usemap="#popMeUp">
+	</div>
+
+	<!-- Using Top Left, Bottom Right -->
+	<map name="popMeUp">
+		<area href="#" shape="rect" coords="19, 38, 43, 83" 
+			title="App User Actor" data-toggle="popover" data-trigger="hover" 
+			data-content="A general role Actor, used to perform Use Cases that all user actor roles would take part in.  E.G. Dieter, Shopper and Chef actors would all perform the Login use case." data-placement="right">	
+		<area href="#" shape="rect" coords="101, 100, 126, 147" 
+			title="Dieter Actor" data-toggle="popover" data-trigger="hover" 
+			data-content="Uses the NutriSaurus App to manage their dietary need.  E.g. Weight loss, manage medical condition, avoid allergens, etc." data-placement="right">	
+		<area href="#" shape="rect" coords="98, 273, 123, 318" 
+			title="Chef Actor" data-toggle="popover" data-trigger="hover" 
+			data-content="Uses the NutriSaurus App to create, find and share healthy Recipes" data-placement="right">	
+		<area href="#" shape="rect" coords="98, 421, 123, 467" 
+			title="Shopper Actor" data-toggle="popover" data-trigger="hover" 
+			data-content="Uses the NutriSaurus App when shopping as both a shopping list and to scan food products to determine their nutrition content" data-placement="right">
+		<area href="#" shape="rect" coords="847, 370, 873, 415" 
+			title="Retailer DB Actor" data-toggle="popover" data-trigger="hover" 
+			data-content="External Retailers' systems" data-placement="right">
+		<area href="#" shape="rect" coords="847, 452, 873, 496" 
+			title="Timeclock Actor" data-toggle="popover" data-trigger="hover" 
+			data-content="Fires the use case at specific times" data-placement="right">
+		<area href="CreateEatingPlan.html" shape="rect" coords="220, 73, 376, 133" 
+			title="Create Eating Plan Profile" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Dieter will use the system to create their eating plan profile" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="220, 153, 376, 214" 
+			title="Add Food Diary Entry" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Dieter will use the system to input their Food Diary entries" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="220, 233, 376, 293" 
+			title="Edit Recipe" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Chef will use the system to amend an existing Recipe" 
+			data-placement="right">
+		<area href="AddRecipe.html" shape="rect" coords="220, 313, 376, 374" 
+			title="Add Recipe" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Chef will use the system to create a new Recipe" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="220, 393, 376, 454" 
+			title="Create Shopping List" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Shopper will use the system to create a Shopping List" 
+			data-placement="right">
+		<area href="GetNutritionalInfo.html" shape="rect" coords="220, 473, 376, 534" 
+			title="Get Food Nutritional Info" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Shopper will use the system to scan a barcode and retrieve Nutritional Information on the scanned food product" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="419, 115, 559, 175" 
+			title="View Progress Report" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Dieter will use the system to display reports on the progress towards their dietary goals" 
+			data-placement="right">
+		<area href="EditEatingPlan.html" shape="rect" coords="419, 205, 559, 265" 
+			title="Edit Eating Plan Profile" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Dieter will use the system to amend their Eating Plan Profile" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="419, 280, 559, 343" 
+			title="Search for Recipes" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Chef will use the system to find existing Recipes" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="419, 360, 559, 420" 
+			title="Share Recipes" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Chef will use the system to share recipes with others on social media" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="419, 439, 559, 499" 
+			title="Edit Shopping List" data-toggle="popover" data-trigger="hover" 
+			data-content="How the Shopper will use the system to amend an existing Shopping List" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="632, 123, 787, 183" 
+			title="Register on App" data-toggle="popover" data-trigger="hover" 
+			data-content="How the App User will use the system to register themself as a NutriSaurus member" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="632, 231, 787, 290" 
+			title="Pay Subscription" data-toggle="popover" data-trigger="hover" 
+			data-content="How the App User will use the system to purchase services available within the NutriSaurus App (included in other use cases)" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="632, 311, 787, 371" 
+			title="Login" data-toggle="popover" data-trigger="hover" 
+			data-content="How the App User will use the system to logon to the NutriSaurus App" 
+			data-placement="right">
+		<area href="#" shape="rect" coords="632, 394, 787, 454" 
+			title="Get Retailer Data Updates" data-toggle="popover" data-trigger="hover" 
+			data-content="How the system will retrieve updates to the Retailers' databases at specified times" 
+			data-placement="right">
+	</map>
+	
+	<script>
+	$(document).ready(function(){
+	    $('[data-toggle="popover"]').popover();
+	});
+
+	</script>
+
+</body>
+</html>

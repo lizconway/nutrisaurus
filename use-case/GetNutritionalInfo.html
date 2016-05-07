@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Get Nutritional Info Use Case</title>
+<link rel="shortcut icon" href="img/nutrisaurus-logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css"> -->
+
+	<script src="jQuery/jquery-1.12.3.min.js"></script>
+	
+	<script src="js/bootstrap.js"></script>
+	
+	<!-- <script src="js/jqm-desktop.js"></script>
+	<script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script> -->
+	
+    <!-- Custom CSS -->
+	<link href="css/use-case.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="nutriNav" class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-12 text-center">LEGEND</div>
+					<br>
+					<div class="col-md-12 text-center actor">Actor</div>
+					<br>
+					<div class="col-md-12 text-center system">
+						NutriSaurus
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="col-md-7">
+				<h1 id="ucTitle">Get Nutrition Info  (Overview)</h1>
+			</div>
+
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-14">
+						<button type="button" class="btn btn-default uc-mid-btn" id="detailOverview"><strong>Click here to view Detail</strong></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="GetNutritionalInfo-TaskCases.html" class="btn btn-warning">Task Cases</a>
+					</div>
+					<div class="col-md-12">
+						<a role="button" href="GetNutritionalInfo-task-flow.html" class="btn btn-info">Task Flow Diagram</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="uc-diagram.html" class="btn btn-success">UC Diagram</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    </div> <!-- /container-fluid -->
+    </nav>
+
+	<div>
+	<h1>Get Food Nutritional Info</h1>
+	<p class="uc-description">This use case details how the Shopper will use the system to scan food barcodes to determine the nutritional information about the food product.</p>
+	<ol>
+	<li>Basic Flow
+		<ol>
+			<li class="actor">Select Option</li>
+			<p class="actor hideMe">The use case begins when the Shopper selects the option for scanning the barcode of a food product.</p>
+	<p class="loop">[The use case loops from step 1.4 (Display scan food barcode screen) to step 1.7 (Display nutritional data screen) until the Shopper chooses to exit.]</p>
+			<li class="system">Display Retailer List screen</li>
+			<p class="system hideMe">The system displays the retailer list screen.</p>
+			<li class="actor">Select Retailer</li>
+			<p class="actor hideMe">The Shopper chooses a retailer.</p>
+			<li class="system">Display scan food barcode screen</li>
+			<p class="system hideMe">The system displays the food barcode screen.</p>
+			<li class="actor">Scan food product</li>
+			<p class="actor hideMe">The Shopper scans food product.</p>
+			<li class="system">Retrieve nutritional data</li>
+			<p class="system hideMe">The system retrieves the nutritional data for the scanned item.</p>
+			<li class="system">Display nutritional data screen</li>
+			<p class="system hideMe">The system displays the nutritional information relating to the scanned product.</p>
+			<li class="actor">Select compare similar products option</li>
+			<p class="actor hideMe">The Shopper chooses to compare similar products.</p>
+			<li class="system">Display similar products comparison</li>
+			<p class="system hideMe">The system retrieves and displays similar products to the scanned food product, and the use case ends</p>
+		</ol>
+	</li>
+		
+	<li>Alternative Flows
+	<ol>
+	<li>Sort similar products</li>
+	<p class="hideMe">If at step 1.8 (Display similar products comparison) the Shopper chooses sort the list by either by price or nutritional benefit, 
+	the system displays the sorted list.  The use case continues at step 1.8 (Display similar products comparison).</p>
+	<li>Search for food product</li>
+	<p class="hideMe">If at step 1.4 (Scan food product) the Shopper chooses to search for the food product.  The system displays the appropriate screen.  The user enters the food product name and brand. The use case continues at step 1.5 (Retrieve nutritional data).  </p>
+	<li>Display recipes</li>
+	<p class="hideMe">If at step 1.6 (Display nutritional data screen) the Shopper chooses to display recipes containing the scanned product.  The system displays a list of recipes which contain the scanned product.  The use case continues at step 1.4 (Scan food product).</p>
+	<li>View Tutorial</li>
+	<p class="hideMe">If at step 1.3 (Select Retailer) the Shopper chooses to view the tutorial, the system displays the appropriate screen.  The Shopper chooses to close the tutorial.  The system closes the tutorial screen, and the use case continues at step 1.3 (Select Retailer).</p>
+	<li>Show Alternative Foods</li>
+	<p class="hideMe">If at step 1.7 (Select compare similar products) the Shopper chooses to view information on alternative foods, the system displays the appropriate screen.  The Shopper chooses to scan the next barcode and the use case continues at step 1.4 (Scan Food Product).</p>
+	<li>Cancel</li>
+	<p class="hideMe">If at any time the Shopper chooses to cancel the activity, the system displays a warning message asking the Dieter to either continue with the cancel action or quit the cancel action.  If the Dieter chooses to continue with the cancel action, the use case ends.  If the Dieter chooses to quit the cancel action, the system closes the message and the use case continues from its current point.</p>
+	<li>Database unavailable</li>
+	<p class="hideMe">If at step 1.5 (Retrieve nutritional data) or step 1.8 (Display similar products comparison) the system establishes that the database is unavailable, the system displays a warning message.  The Shopper acknowledges the warning message and the use case ends.</p>
+	</ol>
+	</li>
+
+	<li>Key Scenario</li>
+	<p class="hideMe">Lorcan Duignan never really cared about healthy food but due to a type 2 diabetes condition needs to watch what he is eating and found the barcode scanner to be simple to use.  All he had to do was swipe it on and the icon for the scanner was ready to go and then it just swiped all the details.  It even allowed him to know if there was too much fat, salt or sugar content in that particular item.  He was able to make an informed health decision based on his own profile and also compare and contrast food prices based on nutritional value!</p>
+	<li>Preconditions</li>
+	<p class="hideMe">The Shopper must have successfully logged in, and still be logged in.</p>
+	<li>Post-conditions</li>
+	<p class="hideMe">None.</p>
+	</ol>
+	</div>
+	<script src="js/uc.js">
+	</script>
+
+	
+</body>
+</html>

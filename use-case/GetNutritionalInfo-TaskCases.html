@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Task Cases for Get Nutritional Info</title>
+<link rel="shortcut icon" href="img/nutrisaurus-logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css"> -->
+
+	<script src="jQuery/jquery-1.12.3.min.js"></script>
+	
+	<script src="js/bootstrap.js"></script>
+	
+	<!-- <script src="js/jqm-desktop.js"></script>
+	<script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script> -->
+	
+    <!-- Custom CSS -->
+	<link href="css/use-case.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="nutriNav" class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12 text-center">LEGEND</div>
+					<br>
+					<div class="col-md-12 text-center actor">Actor</div>
+					<br>
+					<div class="col-md-12 text-center system">
+						NutriSaurus System
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="col-md-6">
+				<h1 id="ucTitle">Get Nutritional Info Task Cases</h1>
+			</div>
+
+			<div class="col-md-2 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="uc-diagram.html" class="btn btn-success">UC Diagram</a>
+					</div>
+					<div class="col-md-12">
+						<a role="button" href="GetNutritionInfo-task-flow.html" class="btn btn-info">Task Flow Diagram</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    </div> <!-- /container-fluid -->
+    </nav>
+
+	<div>
+		<ol class="shiftMe">
+			<li>Basic Flow</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Get Nutritional Data for a Food Product</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Retailer List screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select Retailer</td>
+						<td class="system">Display scan food barcode screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Scan food product</td>
+						<td class="system">Retrieve nutritional data</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display nutritional data screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select compare similar products option</td>
+						<td class="system">Display similar products comparison</td>
+					</tr>
+				</table>
+			<li>Alternative Flow - View Tutorial</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : View a Tutorial on Using the Barcode Scanner</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Retailer List screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af1">Select view tutorial</td>
+						<td class="system af af1">Display tutorial screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af1">Select close tutorial</td>
+						<td class="system af af1">Display Retailer List screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select Retailer</td>
+						<td class="system">Display scan food barcode screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Scan food product</td>
+						<td class="system">Retrieve nutritional data</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display nutritional data screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select compare similar products option</td>
+						<td class="system">Display similar products comparison</td>
+					</tr>
+				</table>
+			<li>Alternative Flow - Search for food product</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Search for a food product</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Retailer List screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select Retailer</td>
+						<td class="system">Display scan food barcode screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af2">Select search for food product</td>
+						<td class="system af af2">Display search foods screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af2">Enter search criteria</td>
+						<td class="system af af2"></td>
+					</tr>
+					<tr>
+						<td class="actor af af2">Select search for food product</td>
+						<td class="system">Retrieve nutritional data</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display nutritional data screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select compare similar products option</td>
+						<td class="system">Display similar products comparison</td>
+					</tr>
+				</table>
+			<li>Alternative Flow - Display Recipes</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Display Recipes containing the scanned food</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Retailer List screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select Retailer</td>
+						<td class="system">Display scan food barcode screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Scan food product</td>
+						<td class="system">Retrieve nutritional data</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display nutritional data screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af3">Select display recipes</td>
+						<td class="system af af3">Display list of recipes</td>
+					</tr>
+					<tr>
+						<td class="actor af af3">Close recipe list</td>
+						<td class="system">Display nutritional data screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select compare similar products option</td>
+						<td class="system">Display similar products comparison</td>
+					</tr>
+				</table>
+			<li>Alternative Flow - Show Alternative Foods</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Display food alternatives for the scanned food</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Retailer List screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select Retailer</td>
+						<td class="system">Display scan food barcode screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Scan food product</td>
+						<td class="system">Retrieve nutritional data</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display nutritional data screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af4">Select view alternatives</td>
+						<td class="system af af4">Display alternative foods screen</td>
+					</tr>
+					<tr>
+						<td class="actor af af4">Select scan next barcode</td>
+						<td class="system af af4">Display scan food barcode screen</td>
+					</tr>
+				</table>
+			<li>Alternative Flow – Sort similar products</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Sort similar products</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Retailer List screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select Retailer</td>
+						<td class="system">Display scan food barcode screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Scan food product</td>
+						<td class="system">Retrieve nutritional data</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display nutritional data screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Select compare similar products option</td>
+						<td class="system">Display similar products comparison</td>
+					</tr>
+					<tr>
+						<td class="actor af af5">Select sort comparison of products</td>
+						<td class="system af af5">Display sorted list of products</td>
+					</tr>
+				</table>
+		</ol>
+	</div>
+
+</body>
+</html>

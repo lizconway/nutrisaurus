@@ -1,0 +1,216 @@
+@CHARSET "UTF-8";
+
+body, #nutriNav {
+	background: #fffacd;
+}
+h1 {
+	text-align: center;
+}
+/**
+ * Centre the text in the Use Case Diagram
+ */
+.heading {
+	text-align: center;
+}
+/**
+ * Centre the tables in the Task Cases
+ */
+table.uc {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+/**
+ * Colour the popovers in the Use Case Diagram
+ */
+.popover-content { 
+	background: #90ee90;
+} 
+.popover-title{ 
+	background: #90eeee;
+}
+/**
+ * Set the background colour in the "nav bar"
+ * for Use Case Diagram, Logical Structure Map, State Transition Diagram
+ */
+.active {
+	background-color: #90eeee;
+}
+.inactive {
+	background-color: #90ee90;
+}
+/**
+ * Table display for the "nav bar"
+ * for Use Case Diagram, Logical Structure Map, State Transition Diagram
+ */
+table {
+	width: 100%;
+	text-align: center;
+}
+td {
+	border: 1px solid black;
+}
+
+.invalid {
+	color: red;
+}
+/**
+ * actor and system classes control the display of 
+ * the steps in the Basic Flow of the Use Case
+ */
+.actor {
+	background-color: #add8e6;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.system {
+	background-color: #00ff00;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+/**
+ * Set background colour for the legends in the 
+ * Logical Structure Map and State Transition Diagram
+ */
+.dieter {
+	background-color: #eabdb8;
+}
+
+.chef {
+	background-color: #afcfa0;
+}
+.shopper {
+	background-color: #a0afff;
+}
+
+.app-user {
+	background-color: orange;
+}
+/**
+ * Indent paragraphs for the Use Cases
+ */
+p {
+	margin-left: 40px;
+}
+
+/**
+ * For the Use Case description
+ * What more can I say????
+ */
+.uc-description {
+	text-align: center;
+	font-size: 150%;
+}
+
+/**
+ * For list numbering
+ * All these css 'ol' selectors are required
+ * Allows sub-lists to have numbering 1.1, 1.2, etc.
+ */
+ ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+  font-weight: bold;
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;    
+}
+
+div > ol > li {
+	font-size: 150%;
+}
+
+ol > li > ol > li {
+	font-size: 100%;
+}
+
+ol > li> ol > p {
+	font-weight: normal;
+	font-size: 75%;
+}
+/**
+ * To hide the text in the Use Cases
+ */
+.hideMe {
+	display:none;
+}
+
+.shiftMe {
+	margin-top: 50px;
+	padding-top: 50px;
+}
+/**
+ * Padding to push page content below the top nav bar
+ */
+.uc-nav-pad {
+	margin-top: 110px;
+}
+.vcentre {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+/**
+ * Task Flow diagram
+ */
+.task-flow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/**
+ * Allow the text in this button to wrap around onto another line
+ */
+.uc-mid-btn {
+	/*margin-top: 5px;*/
+	white-space: normal;
+}
+td {
+	border: 1px solid black;
+}
+/**
+ * af* classes control the display of the Alternative Flow steps
+ * in the Task Case pages
+ */
+.af {
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+}
+
+.af1 {
+	color: blue;
+}
+
+.af2 {
+	color: orange;
+}
+.af3 {
+	color: red;
+}
+.af4 {
+	color: olive;
+}
+.af5 {
+	color:green;
+}
+.af6 {
+	color:maroon;
+}
+.af7 {
+	color:purple;
+}
+.af8 {
+	color:darkblue;
+}

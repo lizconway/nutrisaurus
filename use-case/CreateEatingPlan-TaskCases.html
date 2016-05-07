@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Task Cases for Create Eating Plan</title>
+<link rel="shortcut icon" href="../img/nutrisaurus-logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css"> -->
+
+	<script src="../jQuery/jquery-1.12.3.min.js"></script>
+	
+	<script src="../js/bootstrap.js"></script>
+	
+	<!-- <script src="js/jqm-desktop.js"></script>
+	<script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script> -->
+	
+    <!-- Custom CSS -->
+	<link href="../css/use-case.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="nutriNav" class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12 text-center">LEGEND</div>
+					<br>
+					<div class="col-md-12 text-center actor">Actor</div>
+					<br>
+					<div class="col-md-12 text-center system">
+						NutriSaurus System
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="col-md-6">
+				<h1 id="ucTitle">Create Eating Plan Task Cases</h1>
+			</div>
+
+			<div class="col-md-2 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="uc-diagram.html" class="btn btn-success">UC Diagram</a>
+					</div>
+					<div class="col-md-12">
+						<a role="button" href="CreateEatingPlan-task-flow.html" class="btn btn-info">Task Flow Diagram</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    </div> <!-- /container-fluid -->
+    </nav>
+
+	<div>
+		<ol class="shiftMe">
+			<li>Basic Flow</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Create Eating Plan Profile</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Create Eating Plan Profile screen</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter personal details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter weight loss target</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter dietary needs</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose Save personal eating plan</td>
+						<td class="system">Calculate personalised Eating Plan Profile</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Save new Eating Plan Profile</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display new Eating Plan Profile</td>
+					</tr>
+				</table>
+			<li>Alternative Flow – Enter Medical Condition</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Add a Medical Condition</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Create Eating Plan Profile screen</td>
+					</tr>
+					<tr class="af af1">
+						<td class="actor">Add a medical condition</td>
+						<td class="system"></td>
+					</tr>
+					<tr class="af af1">
+						<td class="actor">Select Save medical condition</td>
+						<td class="system">Save medical condition</td>
+					</tr>
+					<tr>
+						<td class="actor">Enter personal details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter weight loss target</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Enter dietary needs</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Choose Save personal eating plan</td>
+						<td class="system">Calculate personalised Eating Plan Profile</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Save new Eating Plan Profile</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display new Eating Plan Profile</td>
+					</tr>
+				</table>
+			<li>Alternative Flow – Upload Photo</li>
+				<table class="uc">
+					<tr><td colspan="2"><h3>User Intention : Upload Photograph to the Profile</h3></td></tr>
+					<tr>
+						<td><h4>User Action</h4></td>
+						<td>
+							<h4>System Responsibility</h4></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Option</td>
+						<td class="system">Display Edit Eating Plan Profile screen</td>
+					</tr>
+					<tr class="af af2">
+						<td class="actor">Select Upload Photo</td>
+						<td class="system"></td>
+					</tr>
+					<tr class="af af2">
+						<td class="actor">Select Photograph to upload</td>
+						<td class="system"></td>
+					</tr>
+					<tr class="af af2">
+						<td class="actor">Upload Photograph to profile</td>
+						<td class="system">Save Photograph</td>
+					</tr>
+					<tr>
+						<td class="actor">Edit personal details</td>
+						<td class="system"></td>
+					</tr>
+					<tr>
+						<td class="actor">Select Save personal details</td>
+						<td class="system">Save new Eating Plan Profile</td>
+					</tr>
+					<tr>
+						<td class="actor"></td>
+						<td class="system">Display new Eating Plan Profile</td>
+					</tr>
+				</table>
+		</ol>
+	</div>
+
+</body>
+</html>

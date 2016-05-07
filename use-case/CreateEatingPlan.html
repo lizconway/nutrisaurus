@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Eating Plan Use Case</title>
+<link rel="shortcut icon" href="../img/nutrisaurus-logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="jQuery/jquery.mobile-1.4.5.min.css"> -->
+
+	<script src="../jQuery/jquery-1.12.3.min.js"></script>
+	
+	<script src="../js/bootstrap.js"></script>
+	
+	<!-- <script src="js/jqm-desktop.js"></script>
+	<script type="text/javascript" src="jQuery/jquery.mobile-1.4.5.min.js"></script> -->
+	
+    <!-- Custom CSS -->
+	<link href="../css/use-case.css" rel="stylesheet">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <nav id="nutriNav" class="navbar navbar-default navbar-fixed-top">
+    	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-12 text-center">LEGEND</div>
+					<br>
+					<div class="col-md-12 text-center actor">Actor</div>
+					<br>
+					<div class="col-md-12 text-center system">
+						NutriSaurus
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="col-md-7">
+				<h1 id="ucTitle">Create Eating Plan  (Overview)</h1>
+			</div>
+
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-14">
+						<button type="button" class="btn btn-default uc-mid-btn" id="detailOverview"><strong>Click here to view Detail</strong></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="CreateEatingPlan-TaskCases.html" class="btn btn-warning">Task Cases</a>
+					</div>
+					<div class="col-md-12">
+						<a role="button" href="CreateEatingPlan-task-flow.html" class="btn btn-info">Task Flow Diagram</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-1">
+				<div class="row">
+					<div class="col-md-12">
+						<a role="button" href="uc-diagram.html" class="btn btn-success">UC Diagram</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    </div> <!-- /container-fluid -->
+    </nav>
+
+	<div class="uc-nav-pad">
+	<p class="uc-description">This use case details how the Dieter will use the system to create
+		their eating plan profile.</p>
+	<ol>
+		<li>Basic Flow
+		<ol>
+			<li class="actor">Select Option</li>
+			<p class="actor hideMe">The use case begins when the Dieter
+		selects the option for creating a &quot;My Eating Plan Profile&quot;.</p>
+			<li class="system">Display new personal details screen</li>
+			<p class="system hideMe">The system displays a new personalised
+		eating plan screen.</p>
+			<li class="actor">Enter personal details</li>
+			<p class="actor hideMe">The Dieter enters his/her personal
+		details [username, email, age, gender, height, weight]</p>
+			<li class="actor">Enter weight loss target</li>
+			<p class="actor hideMe">The Dieter enters a weight loss target</p>
+			<li class="actor">Enter dietary needs</li>
+			<p class="actor hideMe">The Dieter dietary needs [vegetarian, vegan, kosher, low fat, low salt, low sugar, high in fibre, high in iron, contains vitamin c].</p>
+			<li class="actor">Choose Save Personalised eating plan</li>
+			<p class="actor hideMe">The Dieter chooses to save the new
+		personalised eating plan.</p>
+			<li class="system">Calculate personalised eating plan</li>
+			<p class="system hideMe">The system calculates a personalised
+		eating plan for the Dieter.</p>
+			<li class="system">Save new personalised eating plan</li>
+			<p class="system hideMe">The system saves the new personalised
+		eating plan.</p>
+			<li class="system">Display new personalised eating plan</li>
+			<p class="system hideMe">The system displays the
+		Dieter's new personalised eating plan, and the use case ends.</p>
+		</ol>
+		</li>
+		
+		<li>Alternative Flows
+		<ol>
+			<li>Enter medical condition</li>
+			<p class="hideMe">If at step 1.3 (Edit personal
+		details) the Dieter chooses to select one or more medical conditions.
+		The system displays the appropriate screen. The user selects one or
+		more medical conditions [allergies, diabetic, lactose intolerants,
+		coeliac].</p>
+			<li>Upload Photo</li>
+			<p class="hideMe">If at step 1.3 (Edit personal details) 
+			the Dieter chooses to upload a photograph. The system displays the 
+			appropriate screen. The user chooses a photograph to upload, 
+			and selects the option to upload.  The system uploads the photograph 
+			and adds it to the Dieter’s Eating Plan Profile.  
+			The use case continues at step 1.3 (Edit personal details).</p>
+			<li>Edit weight loss target</li>
+			<p class="hideMe">If at step 1.3 (Edit personal
+		details) the Dieter chooses to edit a weight loss target. The system
+		displays the appropriate screen. The user edits the weight loss
+		target.</p>
+			<li>Edit dietary needs</li>
+			<p class="hideMe">If at step 1.3 (Edit personal
+		details) the Dieter chooses to edit dietary needs. The system displays
+		the appropriate screen. The user edits the dietary need. [Vegetarian,
+		vegan, kosher, low fat, low salt, low sugar, high in fibre, high in
+		iron, contains vitamin c].</p>
+			<li>Cancel</li>
+			<p class="hideMe">If at any time the Dieter chooses to cancel the activity, the system displays a warning message asking the Dieter to either continue with the cancel action or quit the cancel action.  If the Dieter chooses to continue with the cancel action, the use case ends.  If the Dieter chooses to quit the cancel action, the system closes the message and the use case continues from its current point.</p>
+			<li>Database unavailable</li>
+			<p class="hideMe">If at step 1.8 (Save new personalised eating plan) the system establishes that the database is unavailable, the system displays a warning message.  The Dieter acknowledges the warning message and the use case ends.</p>
+		</ol>
+		</li>
+		<li>Key Scenario</li>
+	<p class="hideMe">Aoife Murphy has a coeliac condition that she has managed since childhood.  She needs to be able to cook for her family while maintaining a healthy weight.  She wants to be able to cook tasty recipes that are gluten free and easy for her to source the ingredients.</p>
+	<li>Preconditions</li>
+	<p class="hideMe">The Dieter must have successfully logged in, and still be logged in.</p>
+	<li>Post-conditions</li>
+	<p class="hideMe">Either the personalised eating plan has been amended and all data has been saved, or no data has been modified.</p>
+	</ol>
+
+	</div>
+	<script src="../js/uc.js">
+	</script>
+</body>
+</html>
